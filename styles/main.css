@@ -8,9 +8,12 @@ body {
 .choices {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;      
+    flex-direction: column; 
+    border-style: solid;
+    margin-right: 60%;     
   }
 
 ul {
     list-style-type: none;
 }
+
