@@ -2,12 +2,15 @@ import { renderedInteriors } from "./interiors.js";
 import { renderedPaintColors } from "./paint-colors.js";
 import { renderedTechnology } from "./technology.js";
 import { renderedWheels } from "./wheels.js";
+import { addCustomOrder } from "./database.js"
+import { Orders } from "./orders.js"
 
 document.addEventListener(
     "click",
     (event) => {
-        if(event.target.id === "orderButton")
+        if(event.target.id === "orderButton"){
         addCustomOrder();
+        }
     }
 )
 
@@ -42,6 +45,6 @@ export const carsRUS = () => {
 
         <article class="customOrders">
             <h2>Customized Cars</h2>
-            
+            ${Orders()}
         </article>`
 }

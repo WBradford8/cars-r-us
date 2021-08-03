@@ -1,8 +1,8 @@
-import { getInteriors, getPaintColors, getTechnologies, getWheels } from "./database.js";
+import { getInteriors, getPaintColors, getTechnologies, getWheels, getOrders } from "./database.js";
 
 const interiors = getInteriors()
 const colors = getPaintColors()
-const techs = getTechnologies()
+const technologies = getTechnologies()
 const wheels = getWheels()
 
 
@@ -12,7 +12,7 @@ const buildOrderListItem = (order) => {
             return interior.id === order.interiorId
         }
     )
-    const foundColor = paintColors.find (
+    const foundColor = colors.find (
         (paintColor) => {
             return paintColor.id === order.paintColorId
         }
@@ -43,7 +43,8 @@ export const Orders = () => {
 
     let html = "<ul>"
 
-    const listItems = orders.map((order) => buildOrderListItem(order))
+    const listItems = orders.map(buildOrderListItem) 
+    // => buildOrderListItem(order))
 
     html += listItems.join("")
     html += "</ul>"

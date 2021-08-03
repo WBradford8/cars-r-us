@@ -2,7 +2,14 @@ import { getInteriors, setInterior } from "./database.js";
 
 const interiors = getInteriors()
 
-
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "interior") {
+            setInterior(parseInt(event.target.value))
+        }
+    }
+)
 
 export const renderedInteriors = () => {
     let html = "<ul>"

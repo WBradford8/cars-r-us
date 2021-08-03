@@ -2,6 +2,15 @@ import { getTechnologies, setTechnology } from "./database.js";
 
 const technologies = getTechnologies();
 
+document.addEventListener(
+    "change",
+    (event) => {
+        if (event.target.name === "technology") {
+            // window.alert(`User chose style ${event.target.value}`)
+            setTechnology(parseInt(event.target.value))
+        }
+    }
+)
 
 export const renderedTechnology = () => {
     let html = "<ul>"
