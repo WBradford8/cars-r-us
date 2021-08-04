@@ -19,7 +19,7 @@ document.addEventListener(
 export const carsRUS = () => {
     return `
         <h1>Cars R Us</h1>
-        
+        <div class="back-img"></div>
         <article class ="choices">
             <section class="interior-options">
                 <h2>Interiors</h2>

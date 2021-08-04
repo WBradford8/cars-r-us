@@ -2,18 +2,50 @@
 
 body {
     background-color: blanchedalmond;
+    background-image: url(https://www.adv1wheels.com/wp-content/uploads/2016/06/adv1-wheels-audi-rs6-avant-wagon-germany-forged-luxury-custom-rims-A.jpg);
+    
     font-family: 'Josefin Sans', sans-serif;
+    margin-left: 15%;
 }
 
 .choices {
     display: flex;
     justify-content: space-between;
     flex-direction: column; 
-    border-style: solid;
-    margin-right: 60%;     
+    /* border-style: solid; */
+    margin-right: 60%; 
+   
   }
 
 ul {
     list-style-type: none;
 }
 
+section {
+    border-style: solid;
+    margin-top: 3em;
+    margin-left: 15%;
+    padding: 2em; 
+    border-radius: 25px;
+    box-shadow: 0.25rem 0.25rem 0.5rem #b10f0f;
+    background-color: darkgrey;
+}
+
+/* div.back-img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: relative;
+  }
+  
+  .back-img::after {
+    content: "";
+    background-image: url(https://www.adv1wheels.com/wp-content/uploads/2016/06/adv1-wheels-audi-rs6-avant-wagon-germany-forged-luxury-custom-rims-A.jpg);
+    opacity: 0.25;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  } */
